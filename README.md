@@ -36,7 +36,9 @@ Home.js
     createAt วันที่กดส่งข้อความ
     media รูปหรือวิดีโอ
     และ doc ใน collection lastmessag จะมี unread สถานะข้อความ เพื่มเข้าไป
+    
   - เมื่อมีการส่ง ภาพหรือวิดีโอ จะถูกจัดเก็บใน firebase Storage
+
 User.js
 หน้าที่
   - แสดงข้อความล่าสุด จาก doc ใน collection lastmeassg
