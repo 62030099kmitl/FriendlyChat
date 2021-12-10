@@ -72,6 +72,10 @@ Navbar.js
 
   - เมื่อมีการเรียกใช้ navbar สถานะของ collection user ผู้ที่ล็อคอินจะถูกปรับเป็น isOnline: True
 
+firebaseConfig.js
+หน้าที่
+  - เรียกใช้ firebase และ feature firebase ต่างๆ
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
