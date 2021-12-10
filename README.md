@@ -2,49 +2,74 @@
 
 Register.js
 หน้าที่
+
   - สร้าง User ลงไปใน Firebase Authication
+
   - เพิ่ม Doc ใน collection ชื่อ user มีรายละเอียดดังนี้
+  
     uid uid จาก Firebase Authication
+    
     name ชื่อ user ที่สมัคร
+    
     email อีเมล user ที่สมัคร
+    
     createAt วันที่ ณ สมัคร
+    
     isOnline สถานะออนไลน์
 
 Profile.js
 หน้าที่
+
   - แสดงรายละเอียดข้อมูลจาก Doc ใน user มีรายละเอียดดังนี้
+  
     name ชื่อ user สมัคร
+    
     email อีเมล user ที่สมัคร
+    
     createAt วันที่ ณ สมัคร
+   
   - อัพรูปโปรไฟล์ และลมรูปโปรไฟล์เก่าใน Firebase Storage
 
 Login.js
 หน้าที่
   - ล็อคอินเข้าสู่ระบบ โดยตรงมี user ใน collection user
+  
   - เข้าสู่ระบบ Login ต้องใช้ข้อมูลจากใน collcetion user และ firebase authication มีรายละเอียดดังนี้
+  
     email อีเมล user ที่สมัคร
+    
     password password ที่สมัคร
     
 Home.js
 หน้าที่
   - Query ข้อมูลจาก Doc โดยแสดงข้อมูล user ที่ไม่ใช้ ผู้ล็อคอินออกมา
+  
   - ดึงข้อมูลแสดงแชทจาก collection messag
+  
   - กดปุ่ม ส่งข้อความ Doc ใน collection messag จะถูกเพิ่มโดยมีรายละเอียดดังนี้
+  
     text ข้อความ
+    
     from จากผู้ส่ง
+    
     to ส่งผู้รับ
+    
     createAt วันที่กดส่งข้อความ
+    
     media รูปหรือวิดีโอ
+    
     และ doc ใน collection lastmessag จะมี unread สถานะข้อความ เพื่มเข้าไป
     
   - เมื่อมีการส่ง ภาพหรือวิดีโอ จะถูกจัดเก็บใน firebase Storage
 
 User.js
 หน้าที่
+
   - แสดงข้อความล่าสุด จาก doc ใน collection lastmeassg
 
 Navbar.js
 หน้าที่
+
   - เมื่อมีการเรียกใช้ navbar สถานะของ collection user ผู้ที่ล็อคอินจะถูกปรับเป็น isOnline: True
 
 # Getting Started with Create React App
